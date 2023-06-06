@@ -14,8 +14,6 @@ const About = () => {
     alignItems: 'center',
     textAlign: 'center',
     color: '#fff',
-    backgroundSize: 'cover',
-    backgroundPosition: 'center',
   };
 
   const aboutTextStyle = {

@@ -10,16 +10,16 @@ function Navigation() {
     setShowNav(!showNav);
   };
   
-  const handleMobileNavClick = (event) => {
-    event.preventDefault();
-    const targetId = event.currentTarget.getAttribute("href");
-    const targetElement = document.querySelector(targetId);
-    if (targetElement) {
-      targetElement.scrollIntoView({ behavior: "smooth" });
-    }
-    toggleNav(); // Close the mobile navigation after clicking a link
-  }; 
-  
+  const handleNavLinkClick = (e, target) => {
+    e.preventDefault();
+    const offset = document.querySelector(target).offsetTop;
+    window.scrollTo({
+      top: offset - 70, // Adjust this value to account for any fixed header or other elements
+      behavior: 'smooth',
+    });
+    toggleNav();
+  };
+
   return (
     <>
       {isMobile && (
@@ -36,22 +36,23 @@ function Navigation() {
             <Nav className="flex-column" style={{ textAlign: 'center', paddingTop: '50px', lineHeight: '2rem', display: 'flex'}} >
               <ul className="navbar-nav">
                 <li className="nav-item">
-                <a className="nav-link" href="#about" onClick={handleMobileNavClick}>
+                <a className="nav-link" href="#about" onClick={(e) => handleNavLinkClick(e, '#about')} >
                     <span className='wordSize' style={{ color: '#f57dff' }}>01. </span> <span className='wordSize'>About</span>
-                  </a>
+                    </a> 
                 </li>
+                
                 <li className="nav-item">
-                <a className="nav-link" href="#experience" onClick={handleMobileNavClick}>
+                <a className="nav-link" href="#experience" onClick={(e) => handleNavLinkClick(e, "#experience" )} >
                     <span className='wordSize' style={{ color: '#f57dff' }}>02. </span><span className='wordSize'>Experience</span>
                   </a>
                 </li>
                 <li className="nav-item">
-                <a className="nav-link" href="#work" onClick={handleMobileNavClick}>
+                <a className="nav-link" href="#work" onClick={(e) => handleNavLinkClick(e, '#work')} >
                     <span className='wordSize' style={{ color: '#f57dff' }}>03. </span><span className='wordSize'>Work</span>
                   </a>
                 </li>
                 <li className="nav-item">
-                <a className="nav-link" href="#contact" onClick={handleMobileNavClick}>
+                <a className="nav-link" href="#contact" onClick={(e) => handleNavLinkClick(e, '#contact')} >
                     <span  className='wordSize' style={{ color: '#f57dff' }}>04. </span><span className='wordSize'>Contact</span>
                   </a>
                 </li>

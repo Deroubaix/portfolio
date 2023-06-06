@@ -173,6 +173,24 @@ p {
   }
 }
 
+.cardColor {
+  color: #ccd6f6;
+}
+
+.cardColor:hover {
+  background-color: rgba(251,202,255,0.1); 
+  color:#f57dff;
+  /* color:  #f57dff; */
+}
+
+.borderStyle {
+  padding: 5px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: 13px;
+  background-color: rgba(251,202,255,0.4);
+}
+
 /* .logo {
   height: 6em;
   padding: 1.5em;
