@@ -28,7 +28,7 @@ const Contact = () => {
     };
 
     try {
-      const response = await fetch('http://localhost:5005/api/send-email', {
+      const response = await fetch(`https://outstanding-toad-onesies.cyclic.app/api/send-email`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

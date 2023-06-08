@@ -14,7 +14,7 @@ const Home = () => {
     alignItems: 'center',
     textAlign: 'center',
     color: '#fff',
-    marginTop: '12vh',
+    paddingTop: '100px',
   };
 
   const headingStyle = {
@@ -86,8 +86,8 @@ const Home = () => {
       <h2 style={subheadingStyle}><span className='colorSlate'>A Fullstack Web Developer.</span></h2>
       {!isMobile && (
         <p  style={paragrafhStyle}>
-          I&apos;m a web developer specializing in building <br/> (and occasionally designing) exceptional websites. <br/> Currently,
-          I&apos;m focused on building accessible, <br/>human-centered websites.
+          I&apos;m a web developer specializing in building  (and occasionally designing) <br/> exceptional websites. Currently,
+          I&apos;m focused on building all sorts of accessible, <br/> websites.
         </p>
       )}
        {/* Right Sidebar */}
