@@ -46,14 +46,14 @@ function Navigation() {
                     <span className='wordSize' style={{ color: '#f57dff' }}>02. </span><span className='wordSize'>Experience</span>
                   </a>
                 </li>
-                <li className="nav-item">
+                {/* <li className="nav-item">
                 <a className="nav-link" href="#work" onClick={(e) => handleNavLinkClick(e, '#work')} >
                     <span className='wordSize' style={{ color: '#f57dff' }}>03. </span><span className='wordSize'>Work</span>
                   </a>
-                </li>
+                </li> */}
                 <li className="nav-item">
                 <a className="nav-link" href="#contact" onClick={(e) => handleNavLinkClick(e, '#contact')} >
-                    <span  className='wordSize' style={{ color: '#f57dff' }}>04. </span><span className='wordSize'>Contact</span>
+                    <span  className='wordSize' style={{ color: '#f57dff' }}>03. </span><span className='wordSize'>Contact</span>
                   </a>
                 </li>
               </ul>
@@ -83,14 +83,14 @@ function Navigation() {
                       <span style={{ color: '#f57dff' }}>02. </span>Experience
                     </a>
                   </li>
-                  <li className="nav-item">
+                 {/*  <li className="nav-item">
                     <a className="nav-link" href="#work">
                       <span style={{ color: '#f57dff' }}>03. </span>Work
                     </a>
-                  </li>
+                  </li> */}
                   <li className="nav-item">
                     <a className="nav-link" href="#contact">
-                      <span style={{ color: '#f57dff' }}>04. </span>Contact
+                      <span style={{ color: '#f57dff' }}>03. </span>Contact
                     </a>
                   </li>
                 </ul>

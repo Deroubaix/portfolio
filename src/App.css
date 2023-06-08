@@ -226,3 +226,74 @@ p {
 .read-the-docs {
   color: #888;
 } */
+
+.contact-form-wrapper {
+  padding:  0;
+}
+
+.contact-form {
+  padding: 30px 150px;
+  background-color: rgba(251,202,255,0.1); 
+  border-radius: 12px;
+}
+
+.contact-form textarea {
+  resize: none;
+}
+
+.contact-form .form-input,
+.contact-form .form-text-area {
+  background-color: #f0f4f5;
+  height: 40px;
+  padding-left: 16px;
+  
+}
+
+.contact-form .form-text-area {
+  height: auto;
+  
+}
+
+.contact-form .form-control::placeholder {
+  color: #aeb4b9;
+  font-weight: 500;
+  opacity: 1;
+  font-family: 'SF Mono,Fira Code,Fira Mono,Roboto Mono, monospace';
+}
+
+.contact-form .form-control:-ms-input-placeholder {
+  color: #aeb4b9;
+  font-weight: 500;
+  
+}
+
+.contact-form .form-control::-ms-input-placeholder {
+  color: #aeb4b9;
+  font-weight: 500;
+}
+
+.contact-form .form-control:focus {
+  border-color: #f33fb0;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.07), 0 0 8px #f33fb0;
+}
+
+.contact-form .submit-button-wrapper {
+  text-align: center;
+}
+
+.contact-form .submit-button-wrapper button {
+  border-radius: 4px;
+  background-color: #0F103F;
+  color: white;
+  padding: 10px 60px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  font-family: 'SF Mono,Fira Code,Fira Mono,Roboto Mono, monospace';
+}
+
+.contact-form .submit-button-wrapper button:hover {
+  border-color:  #f57dff;
+  color: #f57dff;
+}
+
+

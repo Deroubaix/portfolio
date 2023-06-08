@@ -31,10 +31,15 @@ const LeftSidebar = () => {
     color: "rgba(255, 255, 255, 0.8)",
     cursor: "pointer",
     transition: "color 0.3s ease",
-    
   };
 
- 
+  const openLinkedIn = () => {
+    window.open("https://www.linkedin.com/in/marisha-deroubaix/"); 
+  };
+
+  const openGitHub = () => {
+    window.open("https://github.com/Deroubaix"); 
+  };
 
   return (
     <div style={sidebarStyle}>
@@ -44,6 +49,7 @@ const LeftSidebar = () => {
           style={iconStyle}
           onMouseEnter={(e) => (e.currentTarget.style.color = "rgb(245, 125, 255)")}
           onMouseLeave={(e) => (e.currentTarget.style.color = "rgba(255, 255, 255, 0.8)")}
+          onClick={openLinkedIn} 
         />
       </div>
       <div>
@@ -52,6 +58,7 @@ const LeftSidebar = () => {
           style={iconStyle}
           onMouseEnter={(e) => (e.currentTarget.style.color = "rgb(245, 125, 255)")}
           onMouseLeave={(e) => (e.currentTarget.style.color = "rgba(255, 255, 255, 0.8)")}
+          onClick={openGitHub} 
         />
       </div>
       <div style={lineStyle}></div>
@@ -60,6 +67,7 @@ const LeftSidebar = () => {
 };
 
 export default LeftSidebar;
+
 
 
 

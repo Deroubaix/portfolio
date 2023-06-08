@@ -3,7 +3,7 @@ import CirclePointer from './components/CirclePointer';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
 import About from './components/About';
-import Work from './components/Work';
+/* import Work from './components/Work'; */
 import './App.css';
 import Contact from './components/Contact';
 import Experience from './components/Experience';
@@ -25,7 +25,7 @@ function App() {
         <Home />
         <About />
         <Experience />
-        <Work />
+        {/* <Work /> */}
         <Contact />
       
         {/* Add more sections/components here */}
