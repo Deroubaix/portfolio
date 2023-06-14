@@ -56,7 +56,7 @@ const About = () => {
   return (
     <div style={sectionStyle} id="about">
       <Container>
-        <h2 style={{  fontSize: '30px', fontFamily: 'Inter', fontWeight: '600', color: '#ccd6f6' }}>
+        <h2 style={{ paddingBottom: '30px', fontSize: '30px', fontFamily: 'Inter', fontWeight: '600', color: '#ccd6f6' }}>
           <span id="numberSection">01.</span> About Me
           <hr style={hrStyle} />
         </h2>

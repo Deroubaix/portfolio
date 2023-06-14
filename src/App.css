@@ -1,12 +1,5 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Fira+Mono&family=Roboto+Mono&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap'); */
-
-
-
-
-
-
-
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Fira+Mono&family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap'); 
 
 * {
   border: 0;
@@ -19,26 +12,13 @@
 }
 html,
 body  {
-    overflow-x: hidden; /* Prevent horizontal overflow */
-    overflow-y: auto; /* Enable vertical scrolling if necessary */
-
-
-  background-color: #0F103F;
-/*   z-index: 0;
-  background-color: var(--color-bg);
-  color: var(--color-white);
-  line-height: 1.7;
-  background-image: url(./assets/Home.png);
-  background-size: cover;
-  background-position: center center;
-  margin: 0;
-  min-width: 362vh;
-  min-height: 100vh;
-  overflow: auto; */
+    overflow-x: hidden; 
+    overflow-y: auto; 
+    background-color: #0F103F;
 }
 
 ul, li,a {
-  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono";
   font-size: 1.1vw;
   color: white;
 }
@@ -69,7 +49,7 @@ p {
 #numberSection {
   font-size: 20px;
   color: rgb(245, 125, 255);
-  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono";
 }
 
 
@@ -208,42 +188,6 @@ p {
   background-color: rgba(251,202,255,0.4);
 }
 
-/* .logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-} */
-
 .contact-form-wrapper {
   padding:  0;
 }
@@ -275,7 +219,7 @@ p {
   color: #aeb4b9;
   font-weight: 500;
   opacity: 1;
-  font-family: 'SF Mono,Fira Code,Fira Mono,Roboto Mono, monospace';
+  font-family:  "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono";
 }
 
 .contact-form .form-control:-ms-input-placeholder {
@@ -305,7 +249,7 @@ p {
   padding: 10px 60px;
   font-weight: 500;
   letter-spacing: 2px;
-  font-family: 'SF Mono,Fira Code,Fira Mono,Roboto Mono, monospace';
+  font-family:  "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono";
 }
 
 .contact-form .submit-button-wrapper button:hover {
