@@ -180,6 +180,16 @@ p {
   }
 }
 
+.cardTitle {
+  color: #f57dff;
+}
+
+.cardLink {
+  color: #ccd6f6;
+}
+.cardLink:hover {
+  color: #f57dff;
+}
 .cardColor {
   color: #ccd6f6;
 }
