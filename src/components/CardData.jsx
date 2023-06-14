@@ -26,7 +26,7 @@ export const CardData = [
     image: booze,
     link: 'https://theboozegames.com',
     description:
-      'Is a website to buy THE booze game.',
+      'Is a website to buy THE booze game. I updated how the website looked to make it more user friendly.',
     skills: ['Shopify', 'JavaScript', 'CSS', 'HTML'],
   },
   {
