@@ -7,6 +7,7 @@ import About from './components/About';
 import './App.css';
 import Contact from './components/Contact';
 import Experience from './components/Experience';
+import Footer from './components/Footer';
 
 
 
@@ -14,7 +15,7 @@ import Experience from './components/Experience';
 function App() {
 
   const appStyle = {
-    backgroundColor: '#0F103F', // Set the desired background color
+    backgroundColor: '#0F103F', 
   };
 
   return (
@@ -29,8 +30,7 @@ function App() {
         <Experience />
         {/* <Work /> */}
         <Contact />
-      
-        {/* Add more sections/components here */}
+        <Footer />
      
     </div>
   );
