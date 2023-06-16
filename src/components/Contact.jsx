@@ -92,13 +92,13 @@ const Contact = () => {
       </p>
       <form className="contact-form" onSubmit={handleSubmit}>
         <div className="form-group">
-          <input className="form-control rounded border-white mb-3 form-input" type='text' placeholder='Enter your name' value={name} onChange={handleNameChange} />
+          <input className="form-control rounded border-white mb-3 form-input" type='text' name="name" autoComplete="name" placeholder='Enter your name' value={name} onChange={handleNameChange} />
         </div>
         <div className="form-group">
-          <input className="form-control rounded border-white mb-3 form-input" type='email' placeholder='Enter your email' value={email} onChange={handleEmailChange} />
+          <input className="form-control rounded border-white mb-3 form-input" type='email' name="email" autoComplete="email" placeholder='Enter your email' value={email} onChange={handleEmailChange} />
         </div>
         <div className="form-group ">
-          <textarea className="form-control rounded border-white mb-3 form-text-area"  rows="5" cols="30" placeholder='Enter your message' value={message} onChange={handleMessageChange} />
+          <textarea className="form-control rounded border-white mb-3 form-text-area"  rows="5" cols="30" name="message" autoComplete="off" placeholder='Enter your message' value={message} onChange={handleMessageChange} />
         </div>
         <div className="submit-button-wrapper">
           <button className="submit-button" type='submit'>Send</button>
