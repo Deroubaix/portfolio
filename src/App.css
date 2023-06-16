@@ -193,6 +193,7 @@ p {
   font-weight: 600;
   border-radius: 13px;
   background-color: rgba(251,202,255,0.4);
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono";
 }
 
 .contact-form-wrapper {
@@ -265,3 +266,23 @@ p {
 }
 
 
+@media (max-width: 576px) {
+  .contact-form {
+    padding: 30px 60px;
+  }
+
+  .contact-form .form-input,
+  .contact-form .form-text-area {
+    font-size: 14px;
+    height: 30px;
+  }
+
+  .contact-form .form-text-area {
+    height: auto;
+  }
+
+  .contact-form .submit-button-wrapper button {
+    padding: 8px 40px;
+  }
+
+}

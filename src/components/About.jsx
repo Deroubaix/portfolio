@@ -1,10 +1,10 @@
 import { Container, Row, Col } from 'react-bootstrap';
 import MePhoto from '../assets/me.jpg';
-
+import { useMediaQuery } from 'react-responsive';
 
 const About = () => {
 
-
+  const isMobile = useMediaQuery({ maxWidth: 991 });
 
   const sectionStyle = {
     minHeight: '100vh',
@@ -36,7 +36,7 @@ const About = () => {
   const hrStyle = {
     position: 'relative',
     display: 'inline-block',
-    width: '62%',
+    width: isMobile ? '90%': '65%',
     borderTop: '1px solid #fff',
     marginLeft: '10px',
     verticalAlign: 'middle',
@@ -128,7 +128,7 @@ const About = () => {
 
           @media (max-width: 767px) {
             .about-text {
-              padding-left: 30px;
+              padding: 0px 25px;
               
             }
           }

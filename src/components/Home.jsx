@@ -7,29 +7,32 @@ const Home = () => {
   const isMobile = useMediaQuery({ maxWidth: 991 });
 
   const homeStyle = {
-    minHeight: '100vh',
+    minHeight: isMobile ? '80vh' : '100vh',
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'flex-start',
     alignItems: 'center',
     textAlign: 'center',
     color: '#fff',
-    paddingTop: '100px',
+    marginTop: '100px',
+    flex: '1', 
   };
 
   const headingStyle = {
-    fontSize: isMobile ? '4vw' : '1.2vw', // Updated font size
+    fontSize: isMobile ? '5vw' : '1.2vw', 
     fontWeight: '600',
     marginBottom: '1.5rem',
     color: '#f57dff',
     fontFamily: 'SF Mono,Fira Code,Fira Mono,Roboto Mono, monospace',
+   
   };
 
   const subheadingStyle = {
-    fontSize: isMobile ? '6vw' : '5vw',
+    fontSize: isMobile ? '8vw' : '5vw',
     fontFamily: 'Inter, sans-serif',
     fontWeight: '800',
-    color: '#ccd6f6',   
+    color: '#ccd6f6', 
+
   };
 
   const paragrafhStyle = {
@@ -43,7 +46,7 @@ const Home = () => {
   const buttonContainerStyle = {
     display: 'flex',
     justifyContent: 'center',
-    gap: '1rem',
+    gap: '2rem',
     flexWrap: 'wrap',
     maxWidth: '100%',
   };

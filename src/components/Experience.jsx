@@ -30,7 +30,7 @@ const Experience = () => {
         style={{
           maxWidth: '1000px',
           margin: '0 auto',
-          marginBottom: '50px'
+          marginBottom: '20px'
         }}
       >
         <Row>

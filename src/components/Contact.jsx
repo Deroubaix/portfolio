@@ -75,40 +75,104 @@ const Contact = () => {
   };
 
   const paragraphStyle = {
-    fontSize: '1.2vw',
+    
     fontFamily: 'Inter, sans-serif',
     color: '#8892b0',
     marginTop: '1rem',
     marginBottom: '2rem',
   };
 
-
   return (
     <Container fluid style={contactStyle} id='contact'>
       <h1 style={headingStyle}>03. What’s next?</h1>
       <h2 style={subheadingStyle}>Get In Touch</h2>
-      <p style={paragraphStyle}>
-        Feel free to contact me by submitting the form below, and I will get back <br/> to you as soon as possible.
+      <p className='paragraph-style' style={paragraphStyle}>
+        Feel free to contact me by submitting the form below, and I will get <br /> back to you as soon as possible.
       </p>
-      <form className="contact-form" onSubmit={handleSubmit}>
-        <div className="form-group">
-          <input className="form-control rounded border-white mb-3 form-input" type='text' name="name" autoComplete="name" placeholder='Enter your name' value={name} onChange={handleNameChange} />
+      <form className='contact-form' onSubmit={handleSubmit}>
+        <div className='form-group'>
+          <input
+            className='form-control rounded border-white mb-3 form-input'
+            type='text'
+            name='name'
+            autoComplete='name'
+            placeholder='Enter your name'
+            value={name}
+            onChange={handleNameChange}
+          />
         </div>
-        <div className="form-group">
-          <input className="form-control rounded border-white mb-3 form-input" type='email' name="email" autoComplete="email" placeholder='Enter your email' value={email} onChange={handleEmailChange} />
+        <div className='form-group'>
+          <input
+            className='form-control rounded border-white mb-3 form-input'
+            type='email'
+            name='email'
+            autoComplete='email'
+            placeholder='Enter your email'
+            value={email}
+            onChange={handleEmailChange}
+          />
         </div>
-        <div className="form-group ">
-          <textarea className="form-control rounded border-white mb-3 form-text-area"  rows="5" cols="30" name="message" autoComplete="off" placeholder='Enter your message' value={message} onChange={handleMessageChange} />
+        <div className='form-group'>
+          <textarea
+            className='form-control rounded border-white mb-3 form-text-area'
+            rows='5'
+            cols='30'
+            name='message'
+            autoComplete='off'
+            placeholder='Enter your message'
+            value={message}
+            onChange={handleMessageChange}
+          />
         </div>
-        <div className="submit-button-wrapper">
-          <button className="submit-button" type='submit'>Send</button>
+        <div className='submit-button-wrapper'>
+          <button className='submit-button' type='submit'>
+            Send
+          </button>
         </div>
       </form>
+
+      <style>
+        {`
+          .form-group {
+            width: 100%;
+            margin: 0 auto;
+          }
+
+          .form-input,
+          .form-text-area {
+            width: 100%;
+            max-width: 400px;
+          }
+
+          @media (max-width: 768px) {
+            .form-input,
+            .form-text-area {
+              max-width: 100%;
+            }
+          }
+
+          @media (max-width: 576px) {
+            .submit-button {
+              font-size: 14px;
+              padding: 10px 20px;
+            }
+          }
+
+          @media (max-width: 576px) {
+          p.paragraph-style {
+            font-size: 10px; 
+          }
+        }
+
+        `}
+      </style>
     </Container>
   );
 };
 
 export default Contact;
+
+
 
 
 
