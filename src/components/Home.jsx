@@ -78,12 +78,22 @@ const Home = () => {
     borderImageSource: 'linear-gradient(135deg, rgba(255, 255, 255, 0.6) 0%, #000000 100%)',
   };
 
+  const handleLetsTalkClick = () => {
+    const contactSection = document.getElementById('contact');
+    contactSection.scrollIntoView({ behavior: 'smooth' });
+  };
+
+  const handleDownloadCVClick = () => {
+    
+    const resumePath = '/src/assets/portfolio_marisha.pdf';
+    window.open(resumePath, '_blank');
+  };
 
 
   return (
     <Container fluid style={homeStyle} id="home">
-     {/* Left Sidebar */}
-     {!isMobile && <LeftSidebar />}
+      {/* Left Sidebar */}
+      {!isMobile && <LeftSidebar />}
       <h1 style={headingStyle}>Hi, my name is</h1>
       <h2 style={subheadingStyle}>Marisha Deroubaix.</h2>
       <h2 style={subheadingStyle}><span className='colorSlate'>A Fullstack Web Developer.</span></h2>
@@ -93,7 +103,7 @@ const Home = () => {
           I&apos;m focused on building all sorts of accessible, <br/> websites.
         </p>
       )}
-       {/* Right Sidebar */}
+      {/* Right Sidebar */}
       {!isMobile && <RightSidebar />}
 
       {isMobile && (
@@ -103,11 +113,11 @@ const Home = () => {
         </p>
       )}
       <div style={buttonContainerStyle}>
-        <Button variant="primary" size="lg" style={buttonStyle2}>
+        <Button variant="primary" size="lg" style={buttonStyle2} onClick={handleLetsTalkClick}>
           Let&apos;s talk
         </Button>
-        <Button variant="primary" size="lg" style={buttonStyle}>
-          Download CV
+        <Button variant="primary" size="lg" style={buttonStyle} onClick={handleDownloadCVClick}>
+          Resume
         </Button>
       </div>
     </Container>
@@ -115,6 +125,8 @@ const Home = () => {
 };
 
 export default Home;
+
+
 
 
 

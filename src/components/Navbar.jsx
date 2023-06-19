@@ -14,7 +14,7 @@ function Navigation() {
     e.preventDefault();
     const offset = document.querySelector(target).offsetTop;
     window.scrollTo({
-      top: offset - 70, // Adjust this value to account for any fixed header or other elements
+      top: offset - 70, 
       behavior: 'smooth',
     });
     toggleNav();
