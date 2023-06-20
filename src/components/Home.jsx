@@ -2,6 +2,7 @@ import { Container, Button } from 'react-bootstrap';
 import { useMediaQuery } from 'react-responsive';
 import RightSidebar from './RightSidebar';
 import LeftSidebar from './LeftSidebar';
+import CVFile from '/public/portfolio_marisha.pdf';
 
 const Home = () => {
   const isMobile = useMediaQuery({ maxWidth: 991 });
@@ -84,10 +85,10 @@ const Home = () => {
   };
 
   const handleDownloadCVClick = () => {
-    
-    const resumePath = '/portfolio_marisha.pdf';
+    const resumePath = CVFile;
     window.open(resumePath, '_blank');
   };
+
 
 
   return (
