@@ -8,32 +8,34 @@ import './App.css';
 import Contact from './components/Contact';
 import Experience from './components/Experience';
 import Footer from './components/Footer';
-
-
-
+import { BrowserRouter } from 'react-router-dom';
 
 function App() {
-
   const appStyle = {
-    backgroundColor: '#0F103F', 
+    backgroundColor: '#0F103F',
   };
 
   return (
-    <div className="App" style={appStyle}>
-    
-    <CirclePointer />
-  
-      <Navbar />
-  
+    <BrowserRouter>
+      <div className="App" style={appStyle}>
+        <CirclePointer />
+        <Navbar />
         <Home />
         <About />
         <Experience />
         {/* <Work /> */}
         <Contact />
         <Footer />
-     
-    </div>
+      </div>
+    </BrowserRouter>
   );
 }
 
 export default App;
+
+
+
+
+
+
+

@@ -21,7 +21,7 @@ const Experience = () => {
   };
 
   return (
-    <Container fluid style={experienceStyle} id='experience'>
+    <Container fluid style={experienceStyle} >
       <h2 className='card-place' style={{ paddingBottom: '80px', fontSize: '30px', fontFamily: 'Inter', fontWeight: '600', color: '#ccd6f6' }}>
         <span id='numberSection'>02.</span> Experience
       </h2>
@@ -33,7 +33,7 @@ const Experience = () => {
           marginBottom: '20px'
         }}
       >
-        <Row>
+        <Row id='experience'>
           {CardData.map((card, index) => (
             <Col key={index} xs={12} sm={6}>
               <div

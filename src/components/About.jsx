@@ -54,14 +54,14 @@ const About = () => {
   };
 
   return (
-    <div style={sectionStyle} id="about">
-      <Container>
+    <div style={sectionStyle} >
+      <Container  id="about">
         <h2 style={{ paddingBottom: '50px', fontSize: '30px', fontFamily: 'Inter', fontWeight: '600', color: '#ccd6f6' }}>
           <span id="numberSection">01.</span> About Me
           <hr style={hrStyle} />
         </h2>
         <Row>
-          <Col xs={12} md={6}>
+          <Col xs={12} md={6} >
             <div className="about-text" style={aboutTextStyle}>
               <p>
                 Hello! My name is Marisha and I enjoy creating things that live on the internet. My interest in programming
@@ -87,7 +87,7 @@ const About = () => {
                 creative teams.
               </p>
               <p>Here are a few technologies I’ve been working with recently:</p>
-              <div className='about-text-grid'>
+              <div className='about-text-grid' >
                 <ul className='mobileView' style={ulStyle}>
                   <li className="triangle-li">
                     <span>JavaScript (ES6+)</span>

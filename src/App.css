@@ -46,6 +46,10 @@ p {
   color: rgb(245, 125, 255) !important;
 }
 
+.logo {
+  color:rgb(204, 214, 246);
+}
+
 #numberSection {
   font-size: 20px;
   color: rgb(245, 125, 255);

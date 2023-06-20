@@ -83,7 +83,7 @@ const Contact = () => {
   };
 
   return (
-    <Container fluid style={contactStyle} id='contact'>
+    <Container fluid style={contactStyle} >
       <h1 style={headingStyle}>03. What’s next?</h1>
       <h2 style={subheadingStyle}>Get In Touch</h2>
       <p className='paragraph-style' style={paragraphStyle}>
@@ -124,7 +124,7 @@ const Contact = () => {
             onChange={handleMessageChange}
           />
         </div>
-        <div className='submit-button-wrapper'>
+        <div className='submit-button-wrapper' id='contact'>
           <button className='submit-button' type='submit'>
             Send
           </button>
