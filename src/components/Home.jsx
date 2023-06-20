@@ -85,7 +85,7 @@ const Home = () => {
 
   const handleDownloadCVClick = () => {
     
-    const resumePath = '/src/assets/portfolio_marisha.pdf';
+    const resumePath = '/portfolio_marisha.pdf';
     window.open(resumePath, '_blank');
   };
 
@@ -96,11 +96,11 @@ const Home = () => {
       {!isMobile && <LeftSidebar />}
       <h1 style={headingStyle}>Hi, my name is</h1>
       <h2 style={subheadingStyle}>Marisha Deroubaix.</h2>
-      <h2 style={subheadingStyle}><span className='colorSlate'>A Fullstack Web Developer.</span></h2>
+      <h2 style={subheadingStyle}><span className='colorSlate'>I&apos;m a full stack web developer.</span></h2>
       {!isMobile && (
         <p  style={paragrafhStyle}>
-          I&apos;m a web developer specializing in building  (and occasionally designing) <br/> exceptional websites. Currently,
-          I&apos;m focused on building all sorts of accessible, <br/> websites.
+          I specialize in building (and occasionally designing)  exceptional websites. <br/>Currently,
+          I&apos;m focused on building all sorts of accessible, user friendly websites <br/>that lead to the overall success of your project.
         </p>
       )}
       {/* Right Sidebar */}
@@ -108,8 +108,8 @@ const Home = () => {
 
       {isMobile && (
         <p className="about-text-home" style={{ ...paragrafhStyle, fontSize: '4vw' }}>
-          I&apos;m a web developer specializing in building (and occasionally designing) exceptional websites.
-          Currently, I&apos;m focused on building accessible, human-centered websites.
+        I specialize in building (and occasionally designing)  exceptional websites.
+          Currently, I&apos;m focused on building all sorts of accessible, user friendly websites that lead to the overall success of your project.
         </p>
       )}
       <div style={buttonContainerStyle}>

@@ -65,8 +65,8 @@ const About = () => {
             <div className="about-text" style={aboutTextStyle}>
               <p>
                 Hello! My name is Marisha and I enjoy creating things that live on the internet. My interest in programming
-                started back in 2017 when I decided I wanted to build apps — turns out seeing multiple videos and courses
-                online taught me a lot about{' '}
+                started back in 2017 when I decided I wanted to build apps. I began to learn to code by taking online courses, and by self-teaching through thousands of hours of videos.
+                Learning online taught me a lot about{' '}
                 <a
                   href="https://en.wikipedia.org/wiki/Object-oriented_programming"
                   target="_blank"
@@ -82,9 +82,8 @@ const About = () => {
                 programming language for iOS!
               </p>
               <p>
-                Fast-forward to today, I’m now a Full-Stack Web Developer. My main focus these days is creating accessible,
-                inclusive products and digital experiences. I love what I do and I do love collaborating in diverse environments and
-                creative teams.
+                Fast-forward to today, I’m now a qualified full-stack web developer. My main focus these days is creating accessible,
+                inclusive products and digital experiences. I love helping people to achieve their project’s goals, and I love collaborating in diverse environments and creative teams.
               </p>
               <p>Here are a few technologies I’ve been working with recently:</p>
               <div className='about-text-grid' >
