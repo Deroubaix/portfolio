@@ -258,17 +258,21 @@ p {
   border-radius: 4px;
   background-color: #0F103F;
   color: white;
-  padding: 10px 60px;
+  padding: 20px 130px;
   font-weight: 500;
   letter-spacing: 2px;
   font-family:  "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono";
+  transition: none; 
+  min-width: 100px; 
 }
 
 .contact-form .submit-button-wrapper button:hover {
   border-color:  #f57dff;
   color: #f57dff;
 }
-
+.contact-form .submit-button-wrapper button:disabled {
+  cursor: not-allowed;
+}
 
 @media (max-width: 576px) {
   .contact-form {
@@ -286,7 +290,7 @@ p {
   }
 
   .contact-form .submit-button-wrapper button {
-    padding: 8px 40px;
+    padding: 10px 90px;
   }
 
 }

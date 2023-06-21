@@ -5,21 +5,31 @@ const Contact = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
+  const [isSent, setIsSent] = useState(false);
+  const [error, setError] = useState(false);
 
   const handleNameChange = (e) => {
     setName(e.target.value);
+    setError(false);
   };
 
   const handleEmailChange = (e) => {
     setEmail(e.target.value);
+    setError(false);
   };
 
   const handleMessageChange = (e) => {
     setMessage(e.target.value);
+    setError(false);
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+
+    if (!name || !email || !message) {
+      setError(true);
+      return;
+    }
 
     const formData = {
       name: name,
@@ -37,7 +47,11 @@ const Contact = () => {
       });
 
       if (response.ok) {
+        setIsSent(true);
         console.log('Email sent successfully');
+        setTimeout(() => {
+          setIsSent(false);
+        }, 3000);
       } else {
         console.error('Error sending email');
       }
@@ -75,19 +89,24 @@ const Contact = () => {
   };
 
   const paragraphStyle = {
-    
     fontFamily: 'Inter, sans-serif',
     color: '#8892b0',
     marginTop: '1rem',
     marginBottom: '2rem',
   };
 
+  const messageStyle = {
+    paddingTop: '1rem',
+    color: isSent ? '#64ffda' : 'red',
+    fontSize: '12px'
+  };
+
   return (
-    <Container fluid style={contactStyle} >
+    <Container fluid style={contactStyle}>
       <h1 style={headingStyle}>03. What’s next?</h1>
       <h2 style={subheadingStyle}>Get In Touch</h2>
       <p className='paragraph-style' style={paragraphStyle}>
-        Want to collaborate, offer me a job, or have any questions? Submit the form below, <br /> and I will get  back to you as soon as possible.
+        Want to collaborate, offer me a job, or have any questions? Submit the form below, <br /> and I will get back to you as soon as possible.
       </p>
       <form className='contact-form' onSubmit={handleSubmit}>
         <div className='form-group'>
@@ -125,12 +144,15 @@ const Contact = () => {
           />
         </div>
         <div className='submit-button-wrapper' id='contact'>
-          <button className='submit-button' type='submit'>
+          <button className='submit-button' type='submit' disabled={isSent}>
             Send
           </button>
         </div>
       </form>
-
+      <div className='message-container'>
+        {error && <p style={messageStyle}>Please fill out all fields.</p>}
+        {isSent && <p style={messageStyle}>Message sent successfully!</p>}
+      </div>
       <style>
         {`
           .form-group {
@@ -159,11 +181,10 @@ const Contact = () => {
           }
 
           @media (max-width: 576px) {
-          p.paragraph-style {
-            font-size: 10px; 
+            p.paragraph-style {
+              font-size: 10px;
+            }
           }
-        }
-
         `}
       </style>
     </Container>
@@ -171,6 +192,17 @@ const Contact = () => {
 };
 
 export default Contact;
+
+
+
+
+
+
+
+
+
+
+
 
 
 
