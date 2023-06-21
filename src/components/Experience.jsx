@@ -15,8 +15,7 @@ const Experience = () => {
     color: '#fff',
   };
 
-  const handleCardClick = (card, isGitIcon) => {
-    const link = isGitIcon ? card.git : card.link;
+  const handleLinkClick = (link) => {
     window.open(link, '_blank');
   };
 
@@ -33,7 +32,7 @@ const Experience = () => {
           marginBottom: '20px'
         }}
       >
-        <Row >
+        <Row>
           {CardData.map((card, index) => (
             <Col key={index} xs={12} sm={6}>
               <div
@@ -47,7 +46,7 @@ const Experience = () => {
                   transition: 'background-color 0.5s',
                   cursor: 'pointer',
                 }}
-                onClick={() => handleCardClick(card, false)}
+                onClick={() => handleLinkClick(card.link)}
               >
                 <img
                   src={card.image}
@@ -65,15 +64,17 @@ const Experience = () => {
                           <FontAwesomeIcon icon={faGithub} className='linkGit' onClick={(e) => e.stopPropagation()} />
                         </a>
                       )}
-                      <FontAwesomeIcon
-                        icon={faExternalLinkAlt}
-                        className='cardLink'
-                        style={{ paddingLeft: '20px', cursor: 'pointer' }}
-                        onClick={(e) => {
-                          e.stopPropagation();
-                          handleCardClick(card, true);
-                        }}
-                      />
+                      {card.link && (
+                        <FontAwesomeIcon
+                          icon={faExternalLinkAlt}
+                          className='cardLink'
+                          style={{ paddingLeft: '20px', cursor: 'pointer' }}
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            handleLinkClick(card.link);
+                          }}
+                        />
+                      )}
                     </div>
                   </div>
                   <p style={{ maxWidth: '500px', paddingLeft: '20px' }}>{card.description}</p>
@@ -96,7 +97,6 @@ const Experience = () => {
           @media (max-width: 768px) {
             .card-container {
               max-width: 500px;
-              
             }
             .card-place {
               padding-top: 100px;
@@ -123,6 +123,8 @@ const Experience = () => {
 };
 
 export default Experience;
+
+
 
 
 
