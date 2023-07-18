@@ -1,10 +1,27 @@
 import click from '../assets/clicked.png';
 import baixa from '../assets/baixa.png';
 import booze from '../assets/boozegames.png';
+import toplipz from '../assets/toplipz.png';
 import heart from '../assets/heart.png';
 import rick from '../assets/rickmorty.png';
 
 export const CardData = [
+  {
+    title: 'The BoozeGames',
+    image: booze,
+    link: 'https://theboozegames.com',
+    description:
+      'The BoozeGames is a drinking game business and party brand. I updated both the website look and the checkout flow to make it more user friendly.',
+    skills: ['Shopify', 'JavaScript', 'CSS', 'HTML'],
+  },
+  {
+    title: 'Top Lipz',
+    image: toplipz,
+    link: 'https://toplipz.com',
+    description:
+      'Top Lipz is an e-commerce business for nicotine pouches. I updated the website to make it more user friendly, added a cauresel and filter plugins for better navigation.',
+    skills: ['WordPress', 'PHP', 'CSS', 'HTML'],
+  },
   {
     title: 'Clicked',
     image: click,
@@ -23,14 +40,7 @@ export const CardData = [
       'A simple web game. Jump and save yourself from all the obstacles that come your way. If you make contact with an obstacle you will loose a life... and get side effects.',
     skills: ['HTML', 'CSS', 'JavaScript', 'Canvas'],
   },
-  {
-    title: 'The BoozeGames',
-    image: booze,
-    link: 'https://theboozegames.com',
-    description:
-      'The BoozeGames is a drinking game business and party brand. I updated both the website look and the checkout flow to make it more user friendly.',
-    skills: ['Shopify', 'JavaScript', 'CSS', 'HTML'],
-  },
+ 
   {
     title: 'Rick and Morty API',
     image: rick,

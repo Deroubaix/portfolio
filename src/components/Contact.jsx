@@ -106,7 +106,7 @@ const Contact = () => {
       <h1 style={headingStyle}>03. What’s next?</h1>
       <h2 style={subheadingStyle}>Get In Touch</h2>
       <p className='paragraph-style' style={paragraphStyle}>
-        Want to collaborate, offer me a job, or have any questions? Submit the form below, <br /> and I will get back to you as soon as possible.
+        Want to collaborate, offer me a job, or have any questions? Submit the <br /> form below, and I will get back to you as soon as possible.
       </p>
       <form className='contact-form' onSubmit={handleSubmit}>
         <div className='form-group'>
