@@ -2,7 +2,7 @@ import { Container, Button } from 'react-bootstrap';
 import { useMediaQuery } from 'react-responsive';
 import RightSidebar from './RightSidebar';
 import LeftSidebar from './LeftSidebar';
-import CVFile from '/public/portfolio_marisha.pdf';
+import CVFile from '/public/WebDev_Resume_MarishaDeroubaix.pdf';
 
 const Home = () => {
   const isMobile = useMediaQuery({ maxWidth: 991 });
