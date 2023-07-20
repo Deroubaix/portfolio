@@ -66,8 +66,8 @@ function Navigation() {
           {isMobile ? (
             <>
               <Navbar.Brand style={{ display: 'flex', alignItems: 'center' }}>
-                <img src={MePhoto} alt="Logo" style={{ width: '40px', height: '40px', borderRadius: '50%', marginRight: '10px' }} />
-                
+                <img src={MePhoto} alt="Marisha Deroubaix photo" style={{ width: '40px', height: '40px', borderRadius: '50%', marginRight: '10px' }} />
+                Marisha Deroubaix
               </Navbar.Brand>
             </>
           ) : (
